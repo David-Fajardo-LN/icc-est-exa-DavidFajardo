@@ -15,3 +15,6 @@ Una vez hecho este proceso, en conjunto con un bucle foreach y condicionales enc
 Finalmente se retorna el grupo solicitado con map.get(clave).
 
 Este metodo, no organiza internamente los proyectos solicitados, ya que no se implemento esta funcion. Sin embargo, se puede realizar de dos formas; usando un metodo de ordenamiento como bubbleSortAvz antes de retornar la lista, o en su defecto, usando un treeSet con un comparador simple que los clasifique, al final, este treeSet se pasan los valores uno por uno a una lista y se retorna ya organizado.
+Ademas, esto permitiria eliminar duplicados, que es algo que por la fomra programada. no realiza.
+
+La complejidad temporal de este metodo esta en O(n) ya que su duracion depende de cuantos elemenos haya, la inserccion es O(1) en cada uno de los arrays, por que es instantaneo.
