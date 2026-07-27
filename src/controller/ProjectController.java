@@ -8,7 +8,6 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import models.SoftwareProject;
-import models.ProjectMetrics;
 
 public class ProjectController {
 
@@ -30,6 +29,7 @@ public class ProjectController {
 
   public List<SoftwareProject> classifyAndExtractProjects(List<SoftwareProject> projects, String requestedCategory) {
     Map<String, List<SoftwareProject>> map = new LinkedHashMap<>();
+
     List<SoftwareProject> critical = new ArrayList<>();
     List<SoftwareProject> standard = new ArrayList<>();
     List<SoftwareProject> small = new ArrayList<>();

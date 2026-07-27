@@ -4,6 +4,8 @@ La firma del metodo devuelve un set, entonces se crea una instania de esta, pero
 En el metodo primero de declara el TreeSet y se le pasa un comparador que primero revisa segun la carga de trabajo, para que el orden sea descendente (Mayor a menor) primero se compara el segundo parametro con el primero. Y si esto es == 0, entonces se compara con codigo, usando ignore Case para evitar mayusculas y minusculas y se compara el primer elemento con el segundo para lograr un orden ascendente.
 
 Luego, con un bucle for, se recorre la lista que se pasa como parametro y se le agrega siempre y cuando esta sea mayor o igual al minimo requerido, finalmente se retorna este Set.
+La complejidad teporar de la comparacion es de O(n) ya que depende de cuantos se quieran comparar, la agregacion a al treeSet ya filtrado, tambien es O(n)
+
 
 ## METODO B
 El segundo metodo, con el fin de mantener ordenadas las claves se uso un linkedHasSet, ya que mantiene el orden en el que se ingresa al mapa.
